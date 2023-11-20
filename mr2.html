@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopmentProject</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h3 {
+            width:100%;
+            height:auto;
+            text-align: center;
+            display: flex;
+            font-size: 25px;
+            color:#fff;
+            transform: translate(900px, -350px);
+        }
+    </style>
+</head>
+
+<body>
+    <h3><b>Toyota MR2 AW11</b></h3>
+    <div>
+    <p class="mr2specs">The Toyota MR2 AW11 is one of the best cars that I have ever come across. It's small but has more room that what the ourside suggest. Since it's really light, you don't really need that much power for it to be quick. One of the best things about it is that it has one of the legendary engine, which is the 4AGE. Not only is that engine really good for modding, it's also a mid-engine car, which means that the cornering feels a lot better and more responsive.</p>
+    <p class="mr2price">Luckily, the MR2 is pretty affordable with a price of around $5,000. <br>I personally thing that for the price, it's a really good car.</p>
+    </div>
+    <style class="mr2picture">
+        body {
+            background-image: url('img/toyotamr2aw11enginebay.jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px 1080px;
+        }
+    </style>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/thecoolergarage.png" alt="garage image">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skyline.html">Nissan Skyline</a></li>
+                    <li><a href="mr2.html">Toyota MR2</a></li>
+                    <li><a href="rx7.html">Mazda RX7</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <button class="logologin-popup">Login</button>
+    </header>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+         </div>
+          <button type="submit" class="btn">Login</button>
+         <div class="login-register">
+             <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+            </div> 
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> I agree to the terms & conditions</label>
+         </div>
+          <button type="submit" class="btn">Register</button>
+         <div class="login-register">
+             <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div> 
+        </form>
+    </div>
+</div>
+
+<img class="lightbluemr2side" src="img/lightbluetoyotamr2.jpg">
+<img class="lightbluemr2back" src="img/lightbluetoyotamr2back.jpg">
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

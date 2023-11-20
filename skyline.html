@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopmentProject</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h2 {
+            width:100%;
+            height:auto;
+            text-align: center;
+            display: flex;
+            color:#fff;
+            transform: translate(900px, -350px);
+        }
+    </style>
+</head>
+
+<body>
+    <h2><b>Nissan Skyline R32 GTR</b></h2>
+    <div>
+    <p class="skylinespecs">The <i> Nissan Skyline R32 GTR</i> is one of the most well known and sought after cars in the car world. It's also known as the Godzilla because of how dominant is was in it's debut. It was powered by a 2.6L RB26 engine that produced 276 horsepower. Even though it wasn't really the lightest car around, the modablity of the engine was immense which made it really popular.</p>
+    <p class="skylineprice">Unfortunately, since the Skyline R32 is really popular, the price is really high at around $40,000</p>
+    </div>
+    <style>
+        body {
+            background-image: url('img/RB26-wallpaperaccess-2.jpg');
+            width:fit-content;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/thecoolergarage.png" alt="garage image">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skyline.html">Nissan Skyline</a></li>
+                    <li><a href="mr2.html">Toyota MR2</a></li>
+                    <li><a href="rx7.html">Mazda RX7</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-main-skyline"></div>
+        <div class="header-main-mr2"></div>
+        <div class="header-main-rx7"></div>
+        <div class="header-main-login"></div>
+
+        <button class="logologin-popup">Login</button>
+    </header>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+         </div>
+          <button type="submit" class="btn">Login</button>
+         <div class="login-register">
+             <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+            </div> 
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> I agree to the terms & conditions</label>
+         </div>
+          <button type="submit" class="btn">Register</button>
+         <div class="login-register">
+             <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div> 
+        </form>
+    </div>
+</div>
+
+    <img class="bobbyskylinefront" src="img/bobbyskylinefront.jpg">
+    <img class="bobbyskylineback" src="img/bobbyskylineback.jpg">
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

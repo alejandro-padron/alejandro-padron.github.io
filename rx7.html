@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopmentProject</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h4 {
+            width:100%;
+            height:auto;
+            text-align: center;
+            display: flex;
+            font-size: 25px;
+            color:#fff;
+            transform: translate(900px, -350px);
+        }
+    </style>
+</head>
+
+<body>
+    <h4><b>Mazda RX7 FD</b></h4>
+    <p class="rx7specs">The Mazda RX7 FD is one if not the best car that Mazda has produced. The engine is one of a kind combustion engine that is wildly different from the rest of the engines. Most people have a love-hate relationship with the rotary engines since they break down easily, but they sound really nice and produce a decent amount of horsepower.</p>
+    <p class="rx7price">Unfortunately, since the rx7 is one of the well known cars in the car community, its also pretty expensive. It costs around $35,000 to get your hands on one.</p>
+    <style>
+        body {
+            background-image: url('img/ezgif.com-webp-to-jpg.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/thecoolergarage.png" alt="garage image">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skyline.html">Nissan Skyline</a></li>
+                    <li><a href="mr2.html">Toyota MR2</a></li>
+                    <li><a href="rx7.html">Mazda RX7</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-main-skyline"></div>
+        <div class="header-main-mr2"></div>
+        <div class="header-main-rx7"></div>
+        <div class="header-main-login"></div>
+
+        <button class="logologin-popup">Login</button>
+    </header>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+         </div>
+          <button type="submit" class="btn">Login</button>
+         <div class="login-register">
+             <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+            </div> 
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> I agree to the terms & conditions</label>
+         </div>
+          <button type="submit" class="btn">Register</button>
+         <div class="login-register">
+             <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div> 
+        </form>
+    </div>
+</div>
+
+<img class="midnightpurplerx7front" src="img/midnightpurplerx7.jpg">
+<img class="redrx7back" src="img/redrx7back.jpg">
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

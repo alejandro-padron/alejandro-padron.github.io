@@ -1,0 +1,387 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px;
+}
+
+.header-main {
+    width:100%;
+    height:60px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height:100%;
+    padding-left:10px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height:60px;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height:100%;
+    align-items: center;
+    font-size:1.1em;
+    text-decoration: none;
+    font-weight:500;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left:30px;
+}
+
+.header-main-nav ul li {
+    display: inline; 
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding:0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:30px;
+    color: #fff;
+    display: block;
+    height:100%;
+}
+
+.header-main-nav ul li a:hover {
+   color: #ef5050
+}
+
+.header-main-login {
+    width: fit-content;
+    height:100%;
+    padding-right:10px;
+}
+
+.header-main-login-in {
+    width:50px;
+    height:50px;
+    background-image: url(../img/152532.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    color: #fff;
+}
+
+.titleorsomething {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-main .logologin-popup {
+    width:130px;
+    height:50px;
+    background:transparent;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+    outline:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.header-main .logologin-popup:hover {
+    background:#fff;
+    color:#000;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height:440px;
+    background:transparent;
+    border: 2px solid #000;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height:520px;
+
+}
+
+.wrapper .form-box {
+    width:100%;
+    padding:40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translate(-400px);
+}
+
+.wrapper .form-box.register {
+    position:absolute;
+    transition: none;
+    transform:translate(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height:45px;
+    background-color: #2e312d;
+    font-size: 2em;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    height:45px;
+    background: #2e312d;
+    border:none;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: 1em;
+    color: #9f9f9f;
+    text-align: center;
+    font-weight: 500;
+    margin:25px;
+    padding-left:5px;
+}
+
+.login-register p a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 300px;
+}
+
+.login-register p a:hover {
+    text-decoration:underline;
+}
+
+.r32skyline {
+    width: 550px;
+    height:300px;
+    transform: translate(-500px, -200px);
+    border-radius: 20px;
+}
+
+.mr2toyota {
+    width:450px;
+    height:300px;
+    transform: translate(400px, 0px);
+    border-radius: 20px;
+
+}
+
+.rx7mazda {
+    width:400px;
+    height:300px;
+    transform: translate(-1450px, 300px);
+    border-radius: 20px;
+}
+
+.bobbyskylinefront {
+    width:450px;
+    height: 300px;
+    transform:translate(-800px, 300px);
+    border-radius: 20px;
+}
+
+.bobbyskylineback {
+    width:600px;
+    height:350px;
+    transform: translate(0px, -150px);
+    border-radius: 20px;
+}
+
+.lightbluemr2side {
+    transform:translate(-800px, -200px);
+    border-radius: 20px;
+}
+
+.lightbluemr2back {
+    transform: translate(0px, 300px);
+    border-radius: 20px;
+}
+
+.midnightpurplerx7front {
+    width:500px;
+    height: 300px;
+    transform: translate(-900px, -200px);
+    border-radius: 20px;
+}
+
+.redrx7back {
+    width:500px;
+    height:350px;
+    transform:translate(0px, 250px);
+    border-radius: 20px;
+}
+
+.skylineparagraph {
+    margin-left:-50px;
+    margin-right: -100px;
+    text-align: center;
+    display: flex;
+    color:#fff;
+    font-size: 20px;
+    transform: translate(500px, -200px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.mr2paragraph {
+    margin-left:-50px;
+    margin-right: -50px;
+    text-align: center;
+    display: flex;
+    color:#fff;
+    font-size: 20px;
+    transform: translate(1100px, 0px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.rx7paragraph {
+    margin-left:-50px;
+    margin-right: -50px;
+    text-align: center;
+    display: flex;
+    color:#fff;
+    font-size: 20px;
+    transform: translate(225px, 300px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.skylinespecs {
+    margin: 0;
+    width: 100%;
+    color:#fff;
+    font-size: 30px;
+    transform: translate(350px, -70px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.skylineprice {
+    margin: 0;
+    width: 100%;
+    color:#fff;
+    font-size: 25px;
+    transform: translate(800px, 200px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.mr2specs {
+    margin-left:-50px;
+    margin-right: -50px;
+    text-align: center;
+    display: flex;
+    color:#fff;
+    font-size: 30px;
+    transform: translate(450px, -150px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.mr2price {
+    margin: 0;
+    width: 100%;
+    color:#fff;
+    color:#fff;
+    font-size: 30px;
+    transform: translate(-200px, 200px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.rx7specs {
+    margin-left:-50px;
+    margin-right: -50px;
+    text-align: center;
+    display: flex;
+    color:#fff;
+    font-size: 30px;
+    transform: translate(400px, -200px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}
+
+.rx7price {
+    margin-left:-50px;
+    margin-right: -50px;
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+    transform: translate(-200px, 300px);
+    border:solid 2px #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(10px)
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopmentProject</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1 {
+            margin-left:auto;
+            margin-right: auto;
+            text-align: center;
+            display: flex;
+            color:#fff;
+            transform: translate(900px, -350px);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1><b>My Dream Garage in Life</b></h1>
+<p class="skylineparagraph">The Nissan Skyline R32 GTR is one of my dream cars. It's one of those that I would never sell once I get my hands on it.</p>
+<p class="mr2paragraph">Toyota MR2 AW11 is the a car that I'm currently thinking about buying since it's both kinda cheap and fun to drive. I would like to save up and buy by the end of the next semester.</p>
+<p class="rx7paragraph">The Mazda RX7 is one of the cars that I personally think that has a timeless design. I'm a really big fan of pop-up headlights and is one of the things that the world has really lost over the years.</p>
+    <style>
+        body {
+            background-image: url('img/redandblackenginebay.jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px 1080px;
+            background-position: center;
+        }
+    </style>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/thecoolergarage.png" alt="garage image">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skyline.html">Nissan Skyline</a></li>
+                    <li><a href="mr2.html">Toyota MR2</a></li>
+                    <li><a href="rx7.html">Mazda RX7</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-main-skyline"></div>
+        <div class="header-main-mr2"></div>
+        <div class="header-main-rx7"></div>
+        <div class="header-main-login"></div>
+
+        <button class="logologin-popup">Login</button>
+    </header>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> Remember me</label>
+         </div>
+          <button type="submit" class="btn">Login</button>
+         <div class="login-register">
+             <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+            </div> 
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+          <div class="input-box">
+             <span class="icon"></span>
+             <input type="email" required>
+             <label>Email</label>
+         </div>
+          <div class="input-box">
+              <span class="icon"></span>
+             <input type="password" required>
+             <label>Password</label>
+         </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox"> I agree to the terms & conditions</label>
+         </div>
+          <button type="submit" class="btn">Register</button>
+         <div class="login-register">
+             <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div> 
+        </form>
+    </div>
+</div>
+
+<img class="r32skyline" src="img/1989-nissan-skylline-gt-r-r32-auction.jpg">
+<img class="mr2toyota" src="img/art-mg-toyotaw10mr2+09s500.jpg">
+<img class="rx7mazda" src="img/bb59355e628d0b7625dc3b83d940724f.jpg">
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
